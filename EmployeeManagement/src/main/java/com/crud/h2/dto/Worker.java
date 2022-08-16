@@ -108,7 +108,9 @@ public class Worker {
 	}
 
 
-	//Method printing data by console
+	/**
+	 * Method printing data by console
+	 */
 	@Override
 	public String toString() {
 		return "Trabajador [id=" + id + ", nombre=" + name + ", trabajo=" + job + ", salario=" + salary;
