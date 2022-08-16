@@ -41,23 +41,8 @@ public class Worker {
 		this.id = id;
 		this.name = name;
 		this.job = job;
-		
-		this.salary = 22000.0; //Remove <--  does not affect nothing
-		
-		if(job.equals(Job.programmer.toString())) {
-			this.salary = 44000.0;
-		}
-		else if(job.equals(Job.dataTester.toString())) {
-			this.salary = 30000.0;
-		
-		}else if(job.equals(Job.assistant.toString())) {
-			this.salary = 25000.0;			
-		}
-		
-		
 	}
-
-
+	
 
 	/**Getters y Setters*/
 
@@ -102,6 +87,7 @@ public class Worker {
 	 */
 	public void setJob(String job) {
 		this.job = job;
+		setSalary(job); //when the job is set we call this function to set the salary dynam
 	}
 
 
@@ -128,5 +114,22 @@ public class Worker {
 		return "Trabajador [id=" + id + ", nombre=" + name + ", trabajo=" + job + ", salario=" + salary;
 	}
 
+	/**
+	 * Method that set the salary depending on the job
+	 * @param job job of the worker
+	 */
+	private void setSalary(String job) {
 
+		if(job.equals(Job.programmer.toString())) {
+			this.salary = 30000.0;
+		}
+		else if(job.equals(Job.dataTester.toString())) {
+			this.salary = 44000.0;
+		
+		}else if(job.equals(Job.assistant.toString())) {
+			this.salary = 25000.0;			
+		}else {
+			this.salary = 0.0;
+		}
+	}
 }

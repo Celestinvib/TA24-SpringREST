@@ -64,7 +64,6 @@ public class WorkerController {
 		
 		selectedWorker.setName(worker.getName());
 		selectedWorker.setJob(worker.getJob());
-		selectedWorker.setSalary(worker.getSalary());
 		
 		updatedWorker = workerServideImpl.updateWorker(selectedWorker);
 		
