@@ -113,7 +113,7 @@ public class Worker {
 	 */
 	@Override
 	public String toString() {
-		return "Trabajador [id=" + id + ", nombre=" + name + ", trabajo=" + job + ", salario=" + salary;
+		return "Trabajador [id=" + id + ", nombre=" + name + ", trabajo=" + job + ", salario=" + salary+" ]";
 	}
 
 	/**
