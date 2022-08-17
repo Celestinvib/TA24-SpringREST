@@ -4,6 +4,7 @@
 ```
 Trabajadores
 GET       /api/trabajadores
+GET       /api/trabajadores/job/{job}
 POST      /api/trabajadores
 GET       /api/trabajadores/{id}
 PUT       /api/trabajadores/{id}
